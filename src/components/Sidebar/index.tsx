@@ -1,5 +1,6 @@
 import { Search } from 'lucide-react'
 import { Logo } from './Logo'
+import { MainNavigation } from './MainNavigation'
 
 export function Sidebar() {
   return (
@@ -10,9 +11,10 @@ export function Sidebar() {
         <input
           type="text"
           placeholder="Search"
-          className="flex-1 border-0 bg-transparent p-0 text-zinc-900 placeholder-zinc-600"
+          className="mx-1 flex-1 border-0 bg-transparent p-0 text-zinc-900 placeholder-zinc-600"
         />
       </div>
+      <MainNavigation />
     </aside>
   )
 }
