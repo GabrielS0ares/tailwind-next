@@ -1,5 +1,4 @@
-import Image from 'next/image'
-import { BotaoManeiro } from './components/BotaoManeiro'
+import { BotaoManeiro } from '../components/BotaoManeiro'
 
 export default function Home() {
   return (
