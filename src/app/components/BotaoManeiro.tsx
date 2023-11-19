@@ -13,7 +13,7 @@ export function BotaoManeiro() {
   }
 
   return (
-    <section className="flex h-screen items-center justify-center bg-neutral-700">
+    <section className="flex h-screen items-center justify-center bg-neutral-900">
       {/* Alterar disabled do botão muda o estilo dele com o enable e o disabled */}
       <button
         disabled={!!loading}
