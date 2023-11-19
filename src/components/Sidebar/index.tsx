@@ -1,9 +1,7 @@
 import {
   BarChart,
   CheckSquare,
-  Cog,
   Flag,
-  LifeBuoy,
   Search,
   SquareStack,
   User,
@@ -12,6 +10,7 @@ import { Logo } from './Logo'
 import { NavItem } from './NavItem'
 import Home from '@/app/page'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
+import { Profile } from './Profile'
 
 export function Sidebar() {
   return (
@@ -34,6 +33,8 @@ export function Sidebar() {
         <NavItem title="Usuários" icon={User} />
       </nav>
       <UsedSpaceWidget />
+      <div className="h-px bg-zinc-200" />
+      <Profile />
     </aside>
   )
 }
