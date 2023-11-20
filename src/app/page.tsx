@@ -1,6 +1,6 @@
 import { SettingsTabs } from '@/components/SettingsTabs'
 import * as Input from '@/components/input'
-import { Mail } from 'lucide-react'
+import { Mail, UploadCloud, User } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -77,7 +77,7 @@ export default function Home() {
           {/* FOTO */}
           <div className="grid-cols-form grid gap-3 pt-5">
             <label
-              htmlFor="email"
+              htmlFor="foto"
               className="space-y-0.5 text-sm font-medium text-zinc-700"
             >
               <p>Sua foto</p>
@@ -85,7 +85,31 @@ export default function Home() {
                 Essa foto será usada em seu perfil
               </span>
             </label>
-            <div></div>
+            <div className="flex items-start gap-5">
+              <div className="flex h-16 w-16 items-center justify-center rounded-full bg-violet-100">
+                <User className="h-8 w-8 text-violet-500" />
+              </div>
+              <label
+                htmlFor="foto"
+                className="hover:bg-violet-25 group flex flex-1 cursor-pointer flex-col items-center gap-3 rounded-lg border border-zinc-300 px-6 py-4 text-center text-zinc-500 shadow-sm hover:border-violet-300"
+              >
+                <div className="border-6 rounded-full border-zinc-100 bg-zinc-200 p-2 duration-200 group-hover:border-violet-200 group-hover:bg-violet-500">
+                  <UploadCloud className="h-5 w-5 text-zinc-600 group-hover:text-white" />
+                </div>
+                <div className="flex flex-col items-center gap-1">
+                  <p className="text-sm font-semibold text-violet-700">
+                    Clique para fazer upload{' '}
+                    <span className="font-normal text-zinc-500">
+                      ou arraste e solte
+                    </span>
+                  </p>
+                  <p className="text-xs">
+                    SVG, PNG, JPG or GIF (max. 800x400px)
+                  </p>
+                </div>
+              </label>
+              <input type="file" className="sr-only" id="foto" />
+            </div>
           </div>
           {/* REGRAS */}
           <div className="grid-cols-form grid gap-3 pt-5">
