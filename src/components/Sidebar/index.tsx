@@ -2,13 +2,13 @@ import {
   BarChart,
   CheckSquare,
   Flag,
+  Home,
   Search,
   SquareStack,
   User,
 } from 'lucide-react'
 import { Logo } from './Logo'
 import { NavItem } from './NavItem'
-import Home from '@/app/page'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 import { Profile } from './Profile'
 import { InputControl, InputPrefix, InputRoot } from '../input'
