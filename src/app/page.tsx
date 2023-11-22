@@ -2,6 +2,7 @@ import { SettingsTabs } from '@/components/SettingsTabs'
 import * as Input from '@/components/input'
 import { Mail } from 'lucide-react'
 import * as FileInput from '@/components/Form/FileInput'
+import { Select } from '@/components/Form/Select'
 
 export default function Home() {
   return (
@@ -109,7 +110,7 @@ export default function Home() {
             <label htmlFor="pais" className="text-sm font-medium text-zinc-700">
               País
             </label>
-            <div></div>
+            <Select />
           </div>
           {/* TIME ZONE */}
           <div className="grid grid-cols-form gap-3 pt-5">
