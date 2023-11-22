@@ -1,9 +1,10 @@
 import { SettingsTabs } from '@/components/SettingsTabs'
 import * as Input from '@/components/input'
-import { Mail } from 'lucide-react'
+import { Bold, Italic, Link, List, ListOrdered, Mail } from 'lucide-react'
 import * as FileInput from '@/components/Form/FileInput'
 import { Select } from '@/components/Form/Select'
 import { SelectItem } from '@/components/Form/Select/SelectItem'
+import { Textarea } from '@/components/Form/Textarea'
 
 export default function Home() {
   return (
@@ -145,7 +146,48 @@ export default function Home() {
                 Escreva uma pequena introdução
               </span>
             </label>
-            <div></div>
+            <div className="space-y-3">
+              <div className="grid grid-cols-2 gap-3">
+                <Select placeholder="" defaultValue="normal">
+                  <SelectItem value="normal" text="Normal Text" />
+                  <SelectItem value="italic" text="Italic Text" />
+                </Select>
+
+                <div className="flex items-center gap-1">
+                  <button
+                    type="button"
+                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
+                  >
+                    <Bold />
+                  </button>
+                  <button
+                    type="button"
+                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
+                  >
+                    <Italic />
+                  </button>
+                  <button
+                    type="button"
+                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
+                  >
+                    <Link />
+                  </button>
+                  <button
+                    type="button"
+                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
+                  >
+                    <ListOrdered />
+                  </button>
+                  <button
+                    type="button"
+                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
+                  >
+                    <List />
+                  </button>
+                </div>
+              </div>
+              <Textarea id="bio" defaultValue="Descreva sua história" />
+            </div>
           </div>
           {/* PORTIFÓLIO */}
           <div className="grid grid-cols-form gap-3 pt-5">
