@@ -148,36 +148,21 @@ export default function Home() {
                 </Select>
 
                 <div className="flex items-center gap-1">
-                  <button
-                    type="button"
-                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
-                  >
+                  <Button type="button" variant="ghost">
                     <Bold />
-                  </button>
-                  <button
-                    type="button"
-                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Italic />
-                  </button>
-                  <button
-                    type="button"
-                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <Link />
-                  </button>
-                  <button
-                    type="button"
-                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <ListOrdered />
-                  </button>
-                  <button
-                    type="button"
-                    className="ml-auto h-5 w-5 duration-200 hover:text-red-500"
-                  >
+                  </Button>
+                  <Button type="button" variant="ghost">
                     <List />
-                  </button>
+                  </Button>
                 </div>
               </div>
               <Textarea id="bio" defaultValue="Descreva sua história" />
